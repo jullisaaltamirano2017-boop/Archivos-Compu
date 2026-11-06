@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: paralelob.generador.tests
+Bundle-ManifestVersion: 2
+Bundle-Name: paralelob.generador.tests
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: paralelob.generador.tests; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: paralelob.generador,
+ GeneradorB,
+ org.eclipse.xtext.testing,
+ org.eclipse.xtext.xbase.testing,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.44.0"
+Import-Package: org.junit.jupiter.api;version="[6.0.0,7.0.0)",
+ org.junit.jupiter.api.extension;version="[6.0.0,7.0.0)"
+Bundle-RequiredExecutionEnvironment: JavaSE-25
+Export-Package: paralelob.tests;x-internal=true

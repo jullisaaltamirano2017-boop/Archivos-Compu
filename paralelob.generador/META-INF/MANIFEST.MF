@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: paralelob.generador
+Bundle-ManifestVersion: 2
+Bundle-Name: paralelob.generador
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: paralelob.generador; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: GeneradorB,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.19.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.44.0",
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-25
+Export-Package: paralelob.services,
+ paralelob.scoping,
+ paralelob,
+ paralelob.generator,
+ paralelob.parser.antlr,
+ paralelob.formatting2,
+ paralelob.serializer,
+ paralelob.validation,
+ paralelob.parser.antlr.internal
+Import-Package: org.apache.log4j
